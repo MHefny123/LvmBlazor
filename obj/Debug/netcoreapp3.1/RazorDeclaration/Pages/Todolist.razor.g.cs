@@ -13,71 +13,97 @@ namespace BlazorLVM.Pages
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
+#nullable restore
 #line 1 "/home/mhefny/HefnyWork/BlazorLVM/_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 2 "/home/mhefny/HefnyWork/BlazorLVM/_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 3 "/home/mhefny/HefnyWork/BlazorLVM/_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 4 "/home/mhefny/HefnyWork/BlazorLVM/_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 5 "/home/mhefny/HefnyWork/BlazorLVM/_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 6 "/home/mhefny/HefnyWork/BlazorLVM/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 7 "/home/mhefny/HefnyWork/BlazorLVM/_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 8 "/home/mhefny/HefnyWork/BlazorLVM/_Imports.razor"
 using BlazorLVM;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 9 "/home/mhefny/HefnyWork/BlazorLVM/_Imports.razor"
 using BlazorLVM.Shared;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 7 "/home/mhefny/HefnyWork/BlazorLVM/Pages/Todolist.razor"
 using BlazorLVM.Data;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 8 "/home/mhefny/HefnyWork/BlazorLVM/Pages/Todolist.razor"
 using BlazorLVM.Services;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 9 "/home/mhefny/HefnyWork/BlazorLVM/Pages/Todolist.razor"
 using BlazorLVM.Models;
 
 #line default
 #line hidden
+#nullable disable
+#nullable restore
 #line 10 "/home/mhefny/HefnyWork/BlazorLVM/Pages/Todolist.razor"
 using BlazorLVM.Pages;
 
 #line default
 #line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/todolist")]
     public partial class Todolist : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -86,6 +112,7 @@ using BlazorLVM.Pages;
         {
         }
         #pragma warning restore 1998
+#nullable restore
 #line 66 "/home/mhefny/HefnyWork/BlazorLVM/Pages/Todolist.razor"
        
     List<BlazorLVM.Models.ToDo> toDoList;
@@ -146,6 +173,7 @@ using BlazorLVM.Pages;
 
 #line default
 #line hidden
+#nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime jsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ToDoListService service { get; set; }
     }
