@@ -1,14 +1,17 @@
-﻿USE [LVM]
+﻿CREATE DATABASE LVM
+
+USE [LVM]
 GO
 /****** Object:  Table [dbo].[__EFMigrationsHistory]    Script Date: 12/16/2019 6:08:31 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[__EFMigrationsHistory](
+CREATE TABLE [dbo].[__EFMigrationsHistory]
+(
 	[MigrationId] [nvarchar](150) NOT NULL,
 	[ProductVersion] [nvarchar](32) NOT NULL,
- CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY CLUSTERED
+	CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY CLUSTERED
 (
 	[MigrationId] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -19,12 +22,13 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[AspNetRoleClaims](
+CREATE TABLE [dbo].[AspNetRoleClaims]
+(
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[RoleId] [nvarchar](450) NOT NULL,
 	[ClaimType] [nvarchar](max) NULL,
 	[ClaimValue] [nvarchar](max) NULL,
- CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY CLUSTERED
+	CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY CLUSTERED
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -35,12 +39,13 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[AspNetRoles](
+CREATE TABLE [dbo].[AspNetRoles]
+(
 	[Id] [nvarchar](450) NOT NULL,
 	[Name] [nvarchar](256) NULL,
 	[NormalizedName] [nvarchar](256) NULL,
 	[ConcurrencyStamp] [nvarchar](max) NULL,
- CONSTRAINT [PK_AspNetRoles] PRIMARY KEY CLUSTERED
+	CONSTRAINT [PK_AspNetRoles] PRIMARY KEY CLUSTERED
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -51,12 +56,13 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[AspNetUserClaims](
+CREATE TABLE [dbo].[AspNetUserClaims]
+(
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[UserId] [nvarchar](450) NOT NULL,
 	[ClaimType] [nvarchar](max) NULL,
 	[ClaimValue] [nvarchar](max) NULL,
- CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY CLUSTERED
+	CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY CLUSTERED
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -67,12 +73,13 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[AspNetUserLogins](
+CREATE TABLE [dbo].[AspNetUserLogins]
+(
 	[LoginProvider] [nvarchar](128) NOT NULL,
 	[ProviderKey] [nvarchar](128) NOT NULL,
 	[ProviderDisplayName] [nvarchar](max) NULL,
 	[UserId] [nvarchar](450) NOT NULL,
- CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY CLUSTERED
+	CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY CLUSTERED
 (
 	[LoginProvider] ASC,
 	[ProviderKey] ASC
@@ -84,10 +91,11 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[AspNetUserRoles](
+CREATE TABLE [dbo].[AspNetUserRoles]
+(
 	[UserId] [nvarchar](450) NOT NULL,
 	[RoleId] [nvarchar](450) NOT NULL,
- CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY CLUSTERED
+	CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY CLUSTERED
 (
 	[UserId] ASC,
 	[RoleId] ASC
@@ -99,7 +107,8 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[AspNetUsers](
+CREATE TABLE [dbo].[AspNetUsers]
+(
 	[Id] [nvarchar](450) NOT NULL,
 	[UserName] [nvarchar](256) NULL,
 	[NormalizedUserName] [nvarchar](256) NULL,
@@ -115,7 +124,7 @@ CREATE TABLE [dbo].[AspNetUsers](
 	[LockoutEnd] [datetimeoffset](7) NULL,
 	[LockoutEnabled] [bit] NOT NULL,
 	[AccessFailedCount] [int] NOT NULL,
- CONSTRAINT [PK_AspNetUsers] PRIMARY KEY CLUSTERED
+	CONSTRAINT [PK_AspNetUsers] PRIMARY KEY CLUSTERED
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -126,12 +135,13 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[AspNetUserTokens](
+CREATE TABLE [dbo].[AspNetUserTokens]
+(
 	[UserId] [nvarchar](450) NOT NULL,
 	[LoginProvider] [nvarchar](128) NOT NULL,
 	[Name] [nvarchar](128) NOT NULL,
 	[Value] [nvarchar](max) NULL,
- CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY CLUSTERED
+	CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY CLUSTERED
 (
 	[UserId] ASC,
 	[LoginProvider] ASC,
@@ -144,12 +154,13 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[ToDoList](
+CREATE TABLE [dbo].[ToDoList]
+(
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[Name] [nvarchar](max) NOT NULL,
 	[Status] [nvarchar](max) NOT NULL,
 	[DueDate] [datetime2](7) NOT NULL,
- CONSTRAINT [PK_ToDoList] PRIMARY KEY CLUSTERED
+	CONSTRAINT [PK_ToDoList] PRIMARY KEY CLUSTERED
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]

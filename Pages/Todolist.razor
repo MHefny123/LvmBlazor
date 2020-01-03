@@ -12,6 +12,9 @@
 @inject ToDoListService service
 @inject IJSRuntime jsRuntime
 
+
+@attribute [Authorize]
+
 <h1>To Do List</h1>
 
 <p>This component demonstrates fetching data from Database.</p>
@@ -111,7 +114,7 @@ else
     {
         taskObject = task;
     }
-
+    
     private async Task Delete()
     {
         var task = await service.Delete(taskObject.Id);

@@ -24,6 +24,7 @@
                     <ValidationSummary />
                     @*--the next pattern if you want use control by control validation istead of Validation Summry--*@
                     @*<ValidationMessage For="@(() => TaskObject.Name)" />*@
+                        
                     <div class="form-group">
                         <label for="taskName">Task Name</label>
                         <input type="hidden" @bind-value="@TaskObject.Id" />
@@ -53,6 +54,8 @@
         </div>
     </div>
 </div>
+
+
 
 
 

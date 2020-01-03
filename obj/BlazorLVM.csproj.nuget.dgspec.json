@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/mhefny/HefnyWork/BlazorLVM/BlazorLVM.csproj": {}
+    "/home/mhefny/HefnyWork/LvmBlazor/BlazorLVM.csproj": {}
   },
   "projects": {
-    "/home/mhefny/HefnyWork/BlazorLVM/BlazorLVM.csproj": {
+    "/home/mhefny/HefnyWork/LvmBlazor/BlazorLVM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mhefny/HefnyWork/BlazorLVM/BlazorLVM.csproj",
+        "projectUniqueName": "/home/mhefny/HefnyWork/LvmBlazor/BlazorLVM.csproj",
         "projectName": "BlazorLVM",
-        "projectPath": "/home/mhefny/HefnyWork/BlazorLVM/BlazorLVM.csproj",
+        "projectPath": "/home/mhefny/HefnyWork/LvmBlazor/BlazorLVM.csproj",
         "packagesPath": "/home/mhefny/.nuget/packages/",
-        "outputPath": "/home/mhefny/HefnyWork/BlazorLVM/obj/",
+        "outputPath": "/home/mhefny/HefnyWork/LvmBlazor/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
